@@ -2,3 +2,58 @@ html {
   margin: 0;
   height: 100%; 
 }
+body{
+background-image: url("minecraft-assets/minecraft_background_with_title.png");
+background-size: cover;
+}
+
+#images {
+  display: flex;
+  flex-direction: column;
+}
+#top{
+  display:flex;
+  margin-top:280px;
+  margin-left:100px;
+  gap:10px;
+  justify-content:center;
+  flex-direction:column;
+  align-items: center;
+}
+#bottom{
+  display:flex;
+  margin-top:100px;
+  margin-left:100px;
+  gap:10px;
+  justify-content:center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'minecraftregular';
+  src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
+}
+#splash{
+  font-size:30px;
+  font-family: 'minecraftregular', sans-serif;
+  color: #fafd11;
+  text-shadow: 1px 2px #463903;
+  position: absolute;
+  left: 1350px;
+  top: 130px;
+  animation: text 2s infinite;
+}
+
+@keyframes text {
+  0% {
+    transform:scale(1) rotate(-30deg);
+  }
+  50% {
+    transform:scale(0.9) rotate(-30deg);
+  }
+  100% {
+    transform:scale(1) rotate(-30deg);
+  }
+}
+
+
